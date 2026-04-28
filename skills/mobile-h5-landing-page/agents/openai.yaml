@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mobile H5 Landing Page"
+  short_description: "生成手机端 H5 长图落地页"
+  brand_color: "#6D5DFB"
+  default_prompt: "Use $mobile-h5-landing-page to generate a mobile H5 landing page image for a course, event, competition, or product."
+policy:
+  allow_implicit_invocation: true

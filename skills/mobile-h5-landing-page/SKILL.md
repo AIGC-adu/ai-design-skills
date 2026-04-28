@@ -1,227 +1,293 @@
 ---
 name: mobile-h5-landing-page
-description: Use when the user wants to design, generate, or edit a mobile H5 landing page image, long-form mobile poster, campaign signup page, course detail page, event registration page, livestream reservation page, competition submission page, or product introduction page. This skill is especially for AI image generation prompts, H5 long-image structure, mobile conversion copy, KV extension, and design execution guidance.
+description: Use when the user wants to design, generate, or edit a mobile H5 landing page image, long-form mobile poster, campaign signup page, course detail page, event registration page, livestream reservation page, competition submission page, or product introduction page. 适用于手机端 H5 长图、课程详情页、比赛征集页、活动报名页、直播预约页、产品介绍页的结构设计、转化文案、KV 延展和 AI 出图。
 ---
 
-# Mobile H5 Landing Page
+# 手机端 H5 落地页生成 Skill
 
-Use this skill when the user asks for mobile H5 page design, H5 long images, landing-page posters, course sales pages, competition recruitment pages, event signup pages, livestream reservation pages, product intro pages, or AI-generated H5 design images.
+当用户要求设计、生成或修改手机端 H5、移动端长图、课程详情页、比赛征集页、活动报名页、直播预约页、产品介绍页、社群传播长图时，使用本 Skill。
 
-The goal is to turn minimal user information into a mobile-first conversion page that is easy to understand, visually unified, and ready for AI image generation, design execution, or frontend implementation.
+核心目标：用尽量少的信息，让用户快速理解价值，并完成下一步动作。输出可以服务于 AI 出图、设计师执行、落地页策划或前端开发。
 
-## Core Judgment
+## 先判断
 
-Always first identify:
+开始前先判断：
 
-1. Page type: competition, course, event, livestream, product, or other.
-2. Conversion goal: signup, submission, reservation, lead capture, purchase, consultation, or trial.
-3. Whether the user provided an existing KV, reference image, brand style, or visual direction.
-4. Whether the content should be one image or split into 2-3 long-image segments.
-5. Whether the user wants a plan, a prompt, an actual generated image, or an editable implementation.
+1. 页面类型：比赛、课程、活动、直播、产品，还是其他。
+2. 转化目标：报名、投稿、预约、留资、购买、咨询、试用。
+3. 是否有现成 KV、参考图、品牌风格或视觉关键词。
+4. 内容是否需要拆成 2-3 段长图。
+5. 用户要的是方案、提示词、真实出图，还是可开发页面。
 
-## Mobile H5 Principles
+如果用户明确要“出图”，不要只给提示词；整理完完整提示词后调用图像生成工具。
 
-Mobile H5 is not a shrunken PC webpage. It should feel like a vertical mobile long image or swipeable mobile landing page.
+## 核心原则
 
-Required:
+手机端 H5 不是 PC 网页缩小版，而是手机端纵向转化长图。
 
-- Single-column vertical structure.
-- One key idea per screen.
-- Clear reading path from attraction to conversion.
-- Large headings, short copy, strong spacing.
-- Obvious CTA in the first screen and bottom section.
-- Visual language inherited from the KV when provided.
-- Low information density and strong mobile readability.
+必须做到：
 
-Avoid:
+- 单列纵向排版。
+- 模块上下排列。
+- 一屏只讲一个重点。
+- 大标题、短文案、强留白。
+- 首屏和底部都要有明确 CTA。
+- 信息从“看懂”走向“相信”再走向“行动”。
+- 如果用户提供 KV，页面必须继承 KV 的视觉语言。
 
-- PC-style multi-column layout.
-- Dense tables or long paragraphs.
-- Stacked UI-card grids.
-- Tiny text.
-- Complex navigation.
-- Too many decorative elements competing with content.
+避免：
 
-## Page Path
+- 多栏复杂布局。
+- 小字密集。
+- 表格堆叠。
+- 一堆 UI 卡片连续堆放。
+- 装饰元素压过内容。
+- 做成普通网页截图。
 
-Use this default path:
+## 页面路径
 
-```text
-First-screen hook -> Value -> Content -> Trust -> Conversion
-```
-
-For longer pages:
+默认路径：
 
 ```text
-Part 1: First screen + core value
-Part 2: Content + rules/details
-Part 3: Trust + CTA conversion
+首屏吸引 -> 价值说明 -> 内容展开 -> 信任建立 -> 行动转化
 ```
 
-## Size Guidance
-
-- First-screen poster: 9:16.
-- Short H5 preview: 1:2.
-- Full mobile H5 preview: 9:20 or 1000 x 2000.
-- Complex pages: split into 2-3 segments instead of forcing all content into one image.
-
-Each generated segment should carry at most 3-4 core modules.
-
-## Structure By Page Type
-
-### Competition
-
-Use:
+内容多时拆成三段：
 
 ```text
-1. First-screen banner
-2. Competition highlights
-3. Track introduction
-4. Submission requirements
-5. Awards
-6. Timeline
-7. Judging criteria
-8. Judges or trust module
-9. Submission CTA
+第一段：首屏 + 核心价值
+第二段：内容 + 规则 / 大纲 / 流程
+第三段：信任 + CTA 转化
 ```
 
-Keep highlights to 3 points. Make submission requirements icon-like and short.
+每段最多承载 3-4 个核心模块。
 
-### Course
+## 尺寸建议
 
-Use the conversion path:
+- 首屏海报：9:16。
+- 简短 H5 预览：1:2。
+- 完整 H5 长图：9:20 或 1000 x 2000。
+- 内容复杂时：拆成 2-3 张，不要硬塞进一张图。
+
+## 页面结构
+
+### 比赛类
+
+用于比赛征集页、投稿页、作品评选页。
 
 ```text
-Pain point -> Course solution -> Learning modules -> Results -> Teacher trust -> Student work -> Signup CTA
+1. 首屏 Banner
+2. 赛事亮点
+3. 赛道介绍
+4. 投稿要求
+5. 奖项设置
+6. 赛程安排
+7. 评审标准
+8. 评委 / 背书模块
+9. 报名 / 投稿入口
 ```
 
-Answer:
+执行要点：
+
+- 赛事亮点控制在 3 个以内。
+- 赛道介绍上下排列，不做复杂左右并列。
+- 投稿要求图标化、关键词化。
+- 底部必须有二维码或明确投稿按钮。
+
+### 课程类
+
+课程页不是介绍课程，而是回答购买疑问。
+
+成交路径：
 
 ```text
-Why should I learn?
-Can I learn it?
-What can I do after learning?
-Who teaches it?
-Are there cases or proof?
-How do I sign up now?
+痛点唤醒 -> 课程方案 -> 内容模块 -> 学完结果 -> 老师背书 -> 学员作品 -> 报名转化
 ```
 
-### Event Or Livestream
-
-Use:
+必须回答：
 
 ```text
-1. First-screen banner
-2. Event highlights
-3. Guest introduction
-4. Agenda
-5. What you will gain
-6. Suitable audience
-7. Participation method
-8. Reservation CTA
+我为什么要学？
+我能不能学会？
+学完能做什么？
+谁来教？
+有没有案例？
+现在怎么报名？
 ```
 
-### Product
-
-Use:
+标准结构：
 
 ```text
-1. First-screen banner
-2. User pain points
-3. Product value
-4. Core features
-5. Use cases
-6. Case proof
-7. Service assurance
-8. Trial or consultation CTA
+1. 首屏 Banner
+2. 课程核心卖点
+3. 适合人群
+4. 课程大纲
+5. 学完收获
+6. 老师介绍
+7. 学员案例 / 作品展示
+8. 上课安排
+9. 报名入口
 ```
 
-## KV Extension Rules
+### 活动 / 直播类
 
-If the user provides a KV or reference image:
+```text
+1. 首屏 Banner
+2. 活动亮点
+3. 嘉宾介绍
+4. 活动流程
+5. 你将收获
+6. 适合人群
+7. 参与方式
+8. 预约入口
+```
 
-- First screen: keep the strongest KV identity.
-- Middle sections: weaken the KV, preserve atmosphere, color, motifs, texture, and icon style.
-- Bottom: strengthen CTA and visually close the page.
+执行要点：
 
-Inherit:
+- 首屏突出主题、时间和 CTA。
+- 嘉宾信息短而有信任感。
+- 活动流程清楚即可，不要写成会议手册。
 
-- Main color system.
-- Title style.
-- Background atmosphere.
-- Mascot/IP/hero object if present.
-- Core visual symbols.
-- Button and CTA style.
+### 产品类
 
-Avoid repeating the full KV in every section.
+```text
+1. 首屏 Banner
+2. 用户痛点
+3. 产品价值
+4. 核心功能
+5. 使用场景
+6. 案例展示
+7. 服务保障
+8. 体验 / 咨询入口
+```
 
-## Copy Rules
+执行要点：
 
-- Prefer keywords and short phrases over paragraphs.
-- Each module should usually stay within 3 lines of core information.
-- Value points should be concrete and result-oriented.
-- CTA should be direct: "立即报名", "扫码投稿", "立即预约", "领取资料", "申请试用".
-- Avoid weak CTA copy such as "了解更多", "查看更多", "点击这里".
+- 痛点直接。
+- 功能图标化。
+- 使用场景具体。
+- CTA 指向试用、咨询、购买或留资。
 
-## Output When User Wants A Plan
+## KV 延展规则
 
-Return:
+如果用户提供 KV、主视觉或参考图，不要重新设计一套风格，而是做页面化延展。
 
-1. Page structure table.
-2. Detailed section-by-section content.
-3. Visual direction.
-4. CTA advice.
-5. Whether to split the image.
-6. AI image-generation prompt.
+必须继承：
 
-Use this table shape:
+- 主色系。
+- 主标题气质。
+- 背景氛围。
+- 吉祥物 / IP / 主视觉元素。
+- 核心视觉符号。
+- 按钮和 CTA 风格。
+
+节奏：
+
+```text
+首屏强 KV
+中段弱氛围
+底部强 CTA
+```
+
+避免每一段都重复完整 KV，避免背景光效和装饰影响阅读。
+
+## 文案规则
+
+- 少文字，留结论。
+- 用关键词和短句替代长段说明。
+- 每个模块尽量不超过 3 行核心信息。
+- 价值点要讲结果，不讲空概念。
+- CTA 要明确动作。
+
+推荐 CTA：
+
+```text
+立即报名
+扫码投稿
+立即预约
+领取资料
+咨询课程顾问
+申请试用
+```
+
+避免：
+
+```text
+了解更多
+查看更多
+点击这里
+```
+
+## 用户要方案时的输出
+
+输出：
+
+1. 页面结构表。
+2. 每屏详细说明。
+3. 视觉设计方向。
+4. CTA 设计建议。
+5. 是否需要分段生成。
+6. 可直接用于 AI 出图的提示词。
+
+结构表格式：
 
 ```markdown
-| Screen | Module | Purpose | Content | Visual Focus | CTA |
+| 屏数 | 模块名称 | 核心作用 | 内容建议 | 视觉重点 | CTA |
 |---|---|---|---|---|---|
-| 01 | First-screen banner | Hook | Main title / subtitle / CTA | KV hero visual | 立即报名 |
+| 01 | 首屏 Banner | 抓人 | 主标题 / 副标题 / CTA | KV 主视觉 | 立即报名 |
 ```
 
-## Output When User Wants An Image
-
-Use the image-generation tool after forming a complete prompt. Do not stop at giving a prompt unless the user specifically asks for prompt only.
-
-The prompt must include:
+每屏详细说明格式：
 
 ```text
-Image type:
-Aspect ratio:
-Overall style:
-Page type:
-Module order:
-Exact visible copy:
-Visual focus:
-Layout requirements:
-Avoid:
+模块名称：
+核心作用：
+页面内容：
+视觉建议：
+注意事项：
 ```
 
-Important image prompt requirements:
+## 用户要出图时的执行
 
-- Ask for a polished mobile H5 long-page preview.
-- Use single-column vertical composition.
-- Use strong top hero area, readable middle modules, and clear bottom CTA.
-- Keep text sparse and large enough to read.
-- Do not request dense tiny Chinese text.
-- If many details are needed, generate segmented images instead of one overcrowded image.
+先整理完整出图提示词，再调用图像生成工具。
 
-## Quality Check
+出图提示词必须包含：
 
-Before finalizing, check:
+```text
+图片类型：
+画面比例：
+页面类型：
+整体风格：
+模块顺序：
+画面文字：
+视觉重点：
+排版要求：
+避免事项：
+```
 
-- Can the first screen be understood in 3 seconds?
-- Does every section have only one focus?
-- Is the page vertical and mobile-first?
-- Is the CTA obvious?
-- Is the page too card-heavy?
-- Is there enough side padding and breathing room?
-- Does it inherit the KV when one exists?
-- Does it look like a formal H5 page instead of a PC webpage screenshot?
+提示词要求：
 
-## One-Sentence Rule
+- 明确生成“手机端 H5 长图落地页预览图”。
+- 单列纵向结构。
+- 首屏要强视觉、强标题、强 CTA。
+- 中段信息清楚可读。
+- 底部有二维码位或明确 CTA。
+- 文案要短，避免密集小字。
+- 内容多时主动拆成分段图。
 
-Mobile H5 is not about putting all information on the page; it is about using clear rhythm to move the user toward action.
+## 质量检查
+
+生成或交付前检查：
+
+- 首屏是否 3 秒内能看懂？
+- 每个模块是否只讲一个重点？
+- 是否是手机端纵向结构？
+- CTA 是否足够清楚？
+- 是否过度卡片化？
+- 左右是否有明显留白？
+- 是否继承了 KV？
+- 是否像正式 H5，而不是 PC 网页截图？
+
+## 一句话原则
+
+手机端 H5 不是把信息全部放上去，而是用清晰节奏，把用户一步步带到行动入口。

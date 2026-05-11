@@ -1,4 +1,4 @@
-# mobile-h5-landing-page 使用说明
+# ai-design-skills-H5 落地页/详情页 使用说明
 
 GitHub 地址：
 
@@ -6,7 +6,9 @@ https://github.com/AIGC-adu/ai-design-skills
 
 ## 这个 Skill 是做什么的
 
-`mobile-h5-landing-page` 是一个用于生成手机端 H5 课程详情页 / 落地页的 Codex Skill。
+`mobile-h5-landing-page` 是内部触发名，对外展示名是 `ai-design-skills-H5 落地页/详情页`。
+
+它是一个用于生成手机端 H5 课程详情页 / 落地页的 Codex Skill。
 
 你只需要提供课程名称、课程介绍和核心模块，它就可以帮你：
 

@@ -1,16 +1,34 @@
-# AI 设计 Skills
+# ai-design-skills-H5 落地页/详情页
 
-这是一个面向 AI 辅助设计工作的 Codex Skills 仓库。
+这是一个面向 AI 辅助设计工作的 Codex Skill，专门用于生成手机端 H5 落地页、课程详情页、平台赠课页和移动端长图。
 
-当前主要 Skill：
+当前 Skill 展示名：
+
+```text
+ai-design-skills-H5 落地页/详情页
+```
+
+内部触发名：
 
 ```text
 mobile-h5-landing-page
 ```
 
-它用于把课程介绍、活动信息、产品卖点、直播预约、比赛征集等内容，快速整理并生成适合手机端阅读的 H5 落地页方案和分段出图提示词。
+内部触发名保持英文短横线写法，是为了安装、调用和跨平台兼容；对外展示和说明页使用中文名称。
 
 当前版本：`2.0`
+
+## 图片案例
+
+下面是用这个 Skill 生成的手机端 H5 落地页 / 详情页示例。实际使用时可以根据课程内容自动换风格、换配色，并按 2 段或 3 段分开出图。
+
+| AI 写作变现指南 | AI 音乐创作课程 |
+|---|---|
+| <img src="./assets/examples/aix-writing-01.png" width="320" alt="AIx 自媒体写作变现指南 H5 示例"> | <img src="./assets/examples/ai-music-01.png" width="320" alt="AI 作词作曲速通指南 H5 示例"> |
+
+| 女性健康科普课程 | AI 写作模块详情 |
+|---|---|
+| <img src="./assets/examples/women-health-01.png" width="320" alt="更年期女性健康知识科普 H5 示例"> | <img src="./assets/examples/aix-writing-02.png" width="320" alt="AIx 自媒体写作变现指南模块页示例"> |
 
 ## 这个 Skill 能做什么
 

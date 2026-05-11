@@ -1,8 +1,45 @@
-# ai-design-skills-H5 落地页/详情页 使用说明
+# ai-design-skills 使用说明
 
 GitHub 地址：
 
 https://github.com/AIGC-adu/ai-design-skills
+
+## ai-design-skills-海报
+
+内部触发名：`live-preview-poster`
+
+安装方式：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo AIGC-adu/ai-design-skills \
+  --path skills/live-preview-poster
+```
+
+最小使用方式：
+
+```text
+用 $live-preview-poster 帮我做一张 9:16 直播预告海报。
+
+主题：导演思维五步法，让故事身价翻倍
+人物：上传照片
+时间：5月7日 19:00
+二维码：右下角预留
+风格：参考我给的图片，整体更热情、更酷炫
+```
+
+默认规则：
+
+- 优先用 image-2 / 图像模型做海报风格探索。
+- 多方案时每张单独生成，不做四宫格。
+- 能根据主题、参考图、风格词或花瓣画板自动分析风格。
+- 选中方向后，再精修中文、二维码和人物一致性。
+
+示例图片见 README。
+
+---
+
+## ai-design-skills-H5 落地页/详情页
 
 ## 这个 Skill 是做什么的
 

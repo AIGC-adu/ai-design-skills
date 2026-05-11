@@ -1,0 +1,8 @@
+interface:
+  display_name: "ai-design-skills-海报"
+  short_description: "生成直播预告与人物海报"
+  brand_color: "#E94B8A"
+  default_prompt: "Use $live-preview-poster to create a 9:16 livestream preview poster from my host photo and theme."
+
+policy:
+  allow_implicit_invocation: true

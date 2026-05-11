@@ -1,6 +1,71 @@
-# ai-design-skills-H5 落地页/详情页
+# ai-design-skills
 
-这是一个面向 AI 辅助设计工作的 Codex Skill，专门用于生成手机端 H5 落地页、课程详情页、平台赠课页和移动端长图。
+这是一个面向 AI 辅助设计工作的 Codex Skills 仓库，用来沉淀常用的 AI 设计工作流。
+
+当前包含：
+
+- `ai-design-skills-H5 落地页/详情页`
+- `ai-design-skills-海报`
+
+## ai-design-skills-海报
+
+这是一个用于生成直播预告海报、人物 IP 海报、课程发布海报和活动预热海报的 Codex Skill。
+
+内部触发名：
+
+```text
+live-preview-poster
+```
+
+主要能力：
+
+- 默认用 image-2 / 图像模型做 9:16 海报风格探索。
+- 一次多方案时，每张海报单独生成，不做四宫格。
+- 根据主题、风格词、参考图或花瓣画板自动分析视觉风格。
+- 支持直播标题、时间、二维码预留位、人物主视觉。
+- 选中方向后，可继续精修中文、二维码和人物一致性。
+
+### 海报图片案例
+
+| 人像输入 | 海报风格探索 |
+|---|---|
+| <img src="./assets/examples/poster-host-portrait.png" width="260" alt="海报人物输入示例"> | <img src="./assets/examples/ai-design-skills-poster-contact-sheet.jpg" width="460" alt="ai-design-skills-海报示例合辑"> |
+
+单张海报示例：
+
+| 示例 1 | 示例 2 |
+|---|---|
+| <img src="./assets/examples/ai-design-skills-poster-01.png" width="260" alt="直播预告海报示例 1"> | <img src="./assets/examples/ai-design-skills-poster-02.png" width="260" alt="直播预告海报示例 2"> |
+
+| 示例 3 | 示例 4 |
+|---|---|
+| <img src="./assets/examples/ai-design-skills-poster-03.png" width="260" alt="直播预告海报示例 3"> | <img src="./assets/examples/ai-design-skills-poster-04.png" width="260" alt="直播预告海报示例 4"> |
+
+安装方式：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo AIGC-adu/ai-design-skills \
+  --path skills/live-preview-poster
+```
+
+最简单的使用方式：
+
+```text
+用 $live-preview-poster 帮我做一张 9:16 直播预告海报。
+
+主题：导演思维五步法，让故事身价翻倍
+人物：上传照片
+时间：5月7日 19:00
+二维码：右下角预留
+风格：参考我给的图片，整体更热情、更酷炫
+```
+
+---
+
+## ai-design-skills-H5 落地页/详情页
+
+这是一个用于生成手机端 H5 落地页、课程详情页、平台赠课页和移动端长图的 Codex Skill。
 
 当前 Skill 展示名：
 

@@ -1,35 +1,210 @@
-# AI Design Skills
+# AI 设计 Skills
 
-Codex skills for AI-assisted design workflows.
+这是一个面向 AI 辅助设计工作的 Codex Skills 仓库。
 
-## Skills
+当前主要 Skill：
 
-- `mobile-h5-landing-page`: Generate mobile H5 landing page structures, copy, visual direction, and AI image-generation prompts for courses, events, competitions, livestreams, and products.
+```text
+mobile-h5-landing-page
+```
 
-Current version: `2.0`
+它用于把课程介绍、活动信息、产品卖点、直播预约、比赛征集等内容，快速整理并生成适合手机端阅读的 H5 落地页方案和分段出图提示词。
 
-Version 2.0 adds:
+当前版本：`2.0`
 
-- 750px mobile H5 segmentation logic.
-- 2-segment or 3-segment output based on content length.
-- Platform course detail pages without forced CTA buttons.
-- Content-aware visual styles instead of default blue tech styling.
-- Multi-style iteration for the same course while preserving structure.
+## 这个 Skill 能做什么
 
-## Install
+`mobile-h5-landing-page` 是一个手机端 H5 落地页生成 Skill，尤其适合批量制作课程详情页和赠课介绍页。
 
-Install the skill into Codex:
+你只需要提供课程名称、课程介绍、核心模块或一张参考截图，它可以帮助你完成：
+
+- 提取课程名称、课程介绍和核心卖点。
+- 判断页面适合拆成 2 段还是 3 段。
+- 按 750px 手机 H5 长图项目思路组织版式。
+- 生成每一段独立图片，方便后期上下拼合。
+- 根据课程内容自动选择不同视觉风格，不固定蓝色科技感。
+- 控制正文大小和信息密度，让页面适合手机端阅读。
+- 支持同一课程多次换风格试稿。
+- 平台内赠课详情页默认不加购买、扫码、开始学习、下一步等引导。
+
+## 适合哪些场景
+
+- 平台内赠课详情页
+- 课程详情页
+- 小程序课程介绍页
+- 手机端 H5 长图
+- 课程宣传海报长图
+- 活动报名页
+- 直播预约页
+- 比赛征集页
+- 产品介绍页
+- 批量课程包装设计
+
+## 版本 2.0 更新重点
+
+`2.0` 版本主要解决真实课程 H5 出图时容易出现的问题：
+
+- 默认按 `750px` 宽的手机 H5 项目来设计。
+- 内容少的课程优先出 2 段，不强行凑 3 段。
+- 内容多的课程再拆 3 段，每段单独生成。
+- 不把手机 H5 做成 PC 网页缩小版。
+- 图标和文字不再简单横排堆叠，而是有上下关系和左右交替节奏。
+- 正文必须适合手机观看，不能密集小字。
+- 课程详情页默认去掉“开始学习”“下一步”“立即领取”等按钮和指引。
+- 视觉风格会跟随课程内容变化，不默认全是蓝色科技风。
+
+## 安装方式
+
+在 Codex 环境里执行：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo YOUR_GITHUB_USERNAME/ai-design-skills \
+  --repo AIGC-adu/ai-design-skills \
   --path skills/mobile-h5-landing-page
 ```
 
-Restart Codex after installation.
+安装完成后，重启 Codex。
 
-## Example
+## 最简单的使用方式
+
+你可以直接对 Codex 说：
 
 ```text
-Use $mobile-h5-landing-page to generate a mobile H5 landing page image for an AI video course.
+用 $mobile-h5-landing-page 帮我把下面课程做成手机端 H5 落地页。
+
+课程名称：
+《AI 作词作曲速通指南》
+
+课程介绍：
+课程带你从 0 到 1 玩转 AI 音乐创作，包含歌词生成技巧、旋律快速生成、AI 配器与和声、混音与成品导出。
+
+核心卖点：
+- 快速上手 AI 音乐生成工具，0 基础也能创作歌曲
+- 掌握 AI 作词、作曲、编曲的一体化流程
+- 能够为短视频、个人创作、商单音乐配乐提供作品
 ```
+
+如果你已经安装了 Skill，也可以更口语化地说：
+
+```text
+帮我把这个课程做成 H5 落地页，按你最新的 mobile-h5-landing-page Skill 来。
+```
+
+## 推荐输入模板
+
+```text
+用 $mobile-h5-landing-page 生成平台内赠课详情页 H5。
+
+课程名称：
+【填写课程名称】
+
+课程介绍：
+【填写课程介绍】
+
+核心模块 / 课程目录：
+【填写课程模块，列表形式最好】
+
+目标用户：
+【可选，例如：副业人群 / 自媒体创作者 / 女性用户 / 职场新人】
+
+页面要求：
+- 手机端 H5 长图
+- 宽度按 750px 设计
+- 内容少就分 2 段
+- 内容多再分 3 段
+- 每段单独出图，方便后期拼合
+- 不要购买、扫码、开始学习按钮
+- 每段底部不要出现“下一步”指引
+```
+
+## 如果只有截图怎么办
+
+可以直接上传课程截图，然后说：
+
+```text
+从这张图片里提取课程名称和课程介绍，再帮我做成手机端 H5 落地页。
+```
+
+Skill 会先从截图中识别课程标题、目录、时长、简介等信息，再整理成适合 H5 的页面结构。
+
+## 默认出图规则
+
+平台内课程详情页和赠课页默认遵循：
+
+- 不加“开始学习”。
+- 不加“立即学习”。
+- 不加“下一步”。
+- 不加购买按钮。
+- 不加价格。
+- 不加二维码。
+- 不加扫码领取。
+
+分段规则：
+
+- 信息较少：优先 2 段。
+- 信息较多：优先 3 段。
+- 每段都是单独图片。
+- 每段都按 750px 宽手机 H5 思路设计。
+- 每段之间要能自然上下拼合。
+
+## 风格如何变化
+
+这个 Skill 不会把所有课程都做成同一种蓝色科技风。
+
+它会根据课程内容选择更贴合的视觉方向，例如：
+
+- AI / 数字人 / 自动化：未来感、银白、深蓝、青紫光效。
+- 自媒体写作 / IP 打造：米白、墨绿、橙色点缀、纸张和编辑器元素。
+- 商业策划 / 运营增长：深绿、黑金、灰白、数据图表。
+- 短视频 / 直播 / 内容创作：紫红、橙黄、视频帧、弹幕、拼贴。
+- 教育培训 / 职业技能：白底、蓝绿、浅灰、学习路径。
+- 女性成长 / 健康科普：奶油白、玫瑰粉、浅杏色、柔和插画。
+- 音乐创作：黑胶唱片、音符、波形、杂志感或创作工作室感。
+
+如果第一版不满意，可以直接说：
+
+```text
+帮我换个风格。
+```
+
+也可以指定方向：
+
+```text
+不要科技感，换成温暖创作感。
+```
+
+```text
+换成黑白杂志风，带一点复古红。
+```
+
+```text
+换成清爽教育风，白底、浅绿、轻量图标。
+```
+
+换风格时，Skill 会尽量保留课程内容、分段数量和页面结构，只替换视觉风格、配色、图形语言和氛围。
+
+## 仓库结构
+
+```text
+ai-design-skills/
+├── README.md
+├── USAGE.md
+└── skills/
+    └── mobile-h5-landing-page/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
+```
+
+文件说明：
+
+- `README.md`：GitHub 首页介绍，适合先了解这个仓库。
+- `USAGE.md`：小白使用说明，适合直接照着输入。
+- `skills/mobile-h5-landing-page/SKILL.md`：Skill 的核心工作流和出图规则。
+- `skills/mobile-h5-landing-page/agents/openai.yaml`：Skill 在 Codex 界面里的显示信息。
+
+## 小白记住这句话
+
+把课程名称、课程介绍、核心模块发给 Codex，并说明“用 `$mobile-h5-landing-page` 做手机端 H5 落地页”，它就会按 750px 手机长图思路帮你拆段、定风格、整理内容并出图。
+
+详细使用说明见：[USAGE.md](./USAGE.md)

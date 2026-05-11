@@ -1,7 +1,7 @@
 interface:
-  display_name: "Mobile H5 Landing Page"
-  short_description: "生成手机端 H5 长图落地页"
+  display_name: "手机端 H5 落地页"
+  short_description: "生成 750px 手机端 H5 分段长图落地页"
   brand_color: "#6D5DFB"
-  default_prompt: "Use $mobile-h5-landing-page to generate a mobile H5 landing page image for a course, event, competition, or product."
+  default_prompt: "用 $mobile-h5-landing-page 帮我把课程、活动或产品介绍做成手机端 H5 分段落地页。"
 policy:
   allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 ---
 name: mobile-h5-landing-page
-description: Use when the user wants to design, generate, or edit a mobile H5 landing page image, long-form mobile poster, campaign signup page, course detail page, event registration page, livestream reservation page, competition submission page, or product introduction page. 适用于手机端 H5 长图、课程详情页、比赛征集页、活动报名页、直播预约页、产品介绍页的结构设计、转化文案、KV 延展和 AI 出图。
+description: 当用户想设计、生成或修改手机端 H5 长图、课程详情页、平台赠课页、活动报名页、直播预约页、比赛征集页、产品介绍页时使用。适用于 750px 手机 H5 分段出图、页面结构设计、课程卖点提炼、移动端可读排版、内容风格匹配、KV 延展和 AI 出图提示词。
 ---
 
 # 手机端 H5 落地页生成 Skill
